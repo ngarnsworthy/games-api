@@ -1,7 +1,7 @@
 {
   "name": "haxmas4",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.tsx"
   },
   "dependencies": {
     "better-sqlite3": "^12.5.0",

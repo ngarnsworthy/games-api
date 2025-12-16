@@ -1,10 +1,11 @@
 import { Hono } from 'hono'
 import { listGames, createGame, deleteGame, finishGame, updateGameDescription } from "./db/queries"
+import Homepage from './homepage'
 
 const app = new Hono()
 
 app.get('/', (c) => {
-  return c.text('Beans!')
+  return c.html(<Homepage />)
 })
 
 app.get("/api/games", (c) => c.json(listGames()))
