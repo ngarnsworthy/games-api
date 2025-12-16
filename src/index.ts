@@ -5,7 +5,7 @@ import Homepage from './homepage'
 const app = new Hono()
 
 app.get('/', (c) => {
-  return c.html(<Homepage />)
+  return c.html(Homepage())
 })
 
 app.get("/api/games", (c) => c.json(listGames()))
